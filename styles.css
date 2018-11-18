@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|Orbitron");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("computer-cup-desk-434337.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* --- Header section --- */
+header h1 {
+  letter-spacing: 5px;
+  position: absolute;
+  font-size: 4rem;
+  font-family: "Lobster", cursive;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px rgb(252, 178, 178);
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/* --- Calculator section --- */
+.calculator {
+  box-shadow: 0 0 10px rgb(151, 151, 151);
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: #dae6ff;
+  border-radius: 8px;
+  position: relative;
+}
+.calculator .screen {
+  width: 80%;
+  height: 80px;
+  background: rgb(250, 250, 250);
+  padding-right: 7px;
+  text-align: right;
+  font-size: 2.5rem;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  font-family: "Orbitron", sans-serif;
+  outline: none;
+  border: none;
+  box-shadow: -1px -1px 4px #333;
+  border-radius: 5px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* --- Power indicator section --- */
+.power-indicator {
+  position: absolute;
+  right: 10%;
+  top: 1.5%;
+}
+/* On / Off light */
+.power-light {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 -1px 2px #333;
+  background: #fff;
+  display: inline-block;
+  margin-right: 15px;
+}
+.power-indicator #off-light {
+  background: rgb(253, 122, 99);
+}
+
+/* --- Calculator Pads section --- */
+.num-pad {
+  position: absolute;
+  top: 21%;
+  left: 11%;
+}
+
+/* Number pad */
+.num-pad .button-pad {
+  width: 80px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255);
+  color: #fff;
+  text-shadow: 0px 0px 4px #222;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 6px 7px;
+  border: 0.7px solid rgb(253, 224, 93);
+  border-radius: 15px;
+  box-shadow: 0px 3px 3px #555;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+/* .num-pad #btn-power {
+  font-size: 1.4em;
+} */
+.num-pad #btn-equal {
+  width: 175px;
+}
+.num-pad .operand {
+  background: rgb(173, 255, 148);
+}
+.num-pad .num {
+  background: rgb(138, 185, 255);
+}
+.num-pad #btn-delete {
+  background: rgb(255, 243, 135);
+}
+.num-pad #btn-clear-entry {
+  background: rgb(255, 187, 131);
+}
+.num-pad #btn-power {
+  background: #fff;
+}
+
+.num-pad .button-pad:active {
+  transform: translateY(3px);
+  box-shadow: 0px 1px 1px #555;
+}
+
+/* --- JavaScript classList --- */
+.grid.text-glow {
+  color: rgb(249, 250, 177);
+  text-shadow: 0 0 10px rgb(255, 255, 94);
+}

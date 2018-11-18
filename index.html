@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header><h1>Calculator</h1></header>
+
+    <!-- Main section -->
+    <section class="calculator">
+      <!-- calculator screen -->
+      <input id="display-screen" class="screen" type="number" disabled />
+
+      <section class="power-indicator">
+        <div class="power-light" id="on-light"></div>
+        <div class="power-light" id="off-light"></div>
+      </section>
+      <!-- calculator pads -->
+      <label for="" class="num-pad">
+        <input id="btn-power" class="button-pad" type="button" value="on" />
+        <input
+          id="btn-clear-entry"
+          class="button-pad"
+          type="button"
+          value="CE"
+        />
+        <input id="btn-delete" class="button-pad" type="button" value="del" />
+        <input
+          id="btn-division"
+          class="button-pad operand"
+          type="button"
+          value="/"
+        />
+        <br />
+        <input id="btn-7" class="button-pad num" type="button" value="7" />
+        <input id="btn-8" class="button-pad num" type="button" value="8" />
+        <input id="btn-9" class="button-pad num" type="button" value="9" />
+        <input
+          id="btn-multiplication"
+          class="button-pad operand"
+          type="button"
+          value="*"
+        />
+        <br />
+        <input id="btn-4" class="button-pad num" type="button" value="4" />
+        <input id="btn-5" class="button-pad num" type="button" value="5" />
+        <input id="btn-6" class="button-pad num" type="button" value="6" />
+        <input
+          id="btn-subtraction"
+          class="button-pad operand"
+          type="button"
+          value="-"
+        />
+        <br />
+        <input id="btn-1" class="button-pad num" type="button" value="1" />
+        <input id="btn-2" class="button-pad num" type="button" value="2" />
+        <input id="btn-3" class="button-pad num" type="button" value="3" />
+        <input
+          id="btn-addition"
+          class="button-pad operand"
+          type="button"
+          value="+"
+        />
+        <br />
+        <input
+          id="btn-dot"
+          class="button-pad operand num"
+          type="button"
+          value="."
+        />
+        <input id="btn-0" class="button-pad num" type="button" value="0" />
+        <input
+          id="btn-equal"
+          class="button-pad operand"
+          type="button"
+          value="="
+        />
+      </label>
+    </section>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
